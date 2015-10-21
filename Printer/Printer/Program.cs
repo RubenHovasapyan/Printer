@@ -18,9 +18,6 @@ namespace deleted
             p1.Printing += P1_Printing;
             p1.PrintFinished += P1_PrintFinished;
             p1.Print(5);
-
-
-
         }
 
         private static void P1_PrintFinished(string msg)
@@ -46,7 +43,6 @@ namespace deleted
         public event PrinterDelegate Printing;
         public event PrinterDelegate PrintFinished;
 
-
         public void Print(int numPages)
         {
             if (PrintStarted != null)
@@ -67,9 +63,6 @@ namespace deleted
             {
                 PrintFinished("Print has been finished!");
             }
-
         }
     }
-
-
 }
